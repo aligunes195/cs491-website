@@ -12,21 +12,21 @@
     <meta content="" name="description" />
     <meta content="Ali Güneş" name="author" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="~/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="~/css/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="~/css/uniform.default.min.css" rel="stylesheet" type="text/css" />
-    <link href="~/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/uniform.default.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
 
     <!-- END GLOBAL MANDATORY STYLES -->
     <!-- BEGIN THEME STYLES -->
     <!-- DOC: To use 'rounded corners' style just load 'components-rounded.css' stylesheet instead of 'components.css' in the below style tag -->
-    <link href="~/css/components.css" id="style_components" rel="stylesheet" type="text/css" />
-    <link href="~/css/layout.css" rel="stylesheet" type="text/css" />
-    <link id="style_color" href="~/css/default.css" rel="stylesheet" type="text/css" />
-    <link href="~/css/toastr.min.css" rel="stylesheet" type="text/css" />
-    <link href="~/css/custom.css" rel="stylesheet" type="text/css" />
-    <link href="~/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/components.css" id="style_components" rel="stylesheet" type="text/css" />
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <link id="style_color" href="css/default.css" rel="stylesheet" type="text/css" />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="css/plugins.min.css" rel="stylesheet" type="text/css" />
 
     <!-- END THEME STYLES -->
 </head>
@@ -174,9 +174,7 @@
                         <li class="dropdown dropdown-user dropdown-dark">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                                 <img alt="" class="img-circle" src="" />
-                                <span id="currentUser" class="username username-hide-on-mobile" data-id="@HttpContext.Current.Session["USERNAME"]">
-                                    @nickName
-                                </span>
+                                <span id="currentUser" class="username username-hide-on-mobile"></span>
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-default">
@@ -223,14 +221,6 @@
                                 <span class="arrow open"></span>
                             </a>
                         </li>
-                        @*<li>
-                                <a href="/Blog">
-                                    <i class="icon-speech"></i>
-                                    <span class="title">Çözüm Blog</span>
-                                    <span class="selected"></span>
-                                    <span class="arrow open"></span>
-                                </a>
-                            </li>*@
                         <li class="menu-dropdown classic-menu-dropdown">
                             <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
                                 Netsim Raporları <i class="fa fa-angle-down"></i>
@@ -260,24 +250,6 @@
                                         Stok Yaşı / Sts
                                     </a>
                                 </li>
-                                @*<li>
-                                        <a href="/StockAge">
-                                            <i class="fa fa-bars"></i>
-                                            Stok Bekleme Süresi
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/StockTurnoverSpec">
-                                            <i class="fa fa-bars"></i>
-                                            Stok Devir Hızı
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/StockTurnover">
-                                            <i class="fa fa-bars"></i>
-                                            Stok Devir Hızı Detay
-                                        </a>
-                                    </li>*@
                                 <li class="ayir">
                                     <h3>Ürün Grupları</h3>
                                 </li>
@@ -300,26 +272,12 @@
                                 Webmarket Raporları <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu pull-left">
-                                @*<li>
-                                        <a href="/WebDashboard">
-                                            <i class="fa fa-bars"></i>
-                                            Genel Bilgiler
-                                        </a>
-                                    </li>*@
-
                                 <li>
                                     <a href="/WebDashboard/Weblogs">
                                         <i class="fa fa-bars"></i>
                                         Webmarket Logları
                                     </a>
                                 </li>
-
-                                @*<li>
-                                        <a href="/WebCrm/Index">
-                                            <i class="fa fa-bars"></i>
-                                            Webmarket CRM
-                                        </a>
-                                    </li>*@
                             </ul>
                         </li>
                         <li class="menu-dropdown classic-menu-dropdown">
@@ -447,9 +405,7 @@
     <div class="page-container">
         <!-- BEGIN CONTENT -->
         <div class="page-content">
-            <div class="container-fluid">
-                @RenderBody()
-            </div>
+            <div class="container-fluid"></div>
         </div>
         <!-- END CONTENT -->
     </div>

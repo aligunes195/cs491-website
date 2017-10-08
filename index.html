@@ -36,173 +36,13 @@
         <div class="page-header-top">
             <div class="container-fluid">
                 <!-- BEGIN LOGO -->
-                <div class="page-logo" id="page-logo">
-                    whose<span style="color: red">pic</span>
-                    <div class="menu-toggler sidebar-toggler hide">
-                        <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
-                    </div>
+                <div class="page-logo home-clickable" id="page-logo">
+                    whose<span class="page-logo-red">pic</span>
                 </div>
                 <!-- END LOGO -->
                 <!-- BEGIN RESPONSIVE MENU TOGGLER -->
                 <a href="javascript:;" class="menu-toggler"></a>
                 <!-- END RESPONSIVE MENU TOGGLER -->
-                <!-- BEGIN TOP NAVIGATION MENU -->
-                <div class="top-menu">
-                    <ul class="nav navbar-nav pull-right">
-                        <!-- BEGIN NOTIFICATION DROPDOWN -->
-                        <li class="dropdown dropdown-extended dropdown-dark dropdown-notification" id="header_notification_bar">
-                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <i class="icon-bell"></i>
-                                <span class="badge badge-default"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="external">
-                                    <h3>You have <strong>12 pending</strong> tasks</h3>
-                                    <a href="javascript:;">view all</a>
-                                </li>
-                                <li>
-                                    <ul class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">just now</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-success">
-                                                        <i class="fa fa-plus"></i>
-                                                    </span>
-                                                    New user registered.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">3 mins</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-danger">
-                                                        <i class="fa fa-bolt"></i>
-                                                    </span>
-                                                    Server #12 overloaded.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">10 mins</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-warning">
-                                                        <i class="fa fa-bell-o"></i>
-                                                    </span>
-                                                    Server #2 not responding.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">14 hrs</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-info">
-                                                        <i class="fa fa-bullhorn"></i>
-                                                    </span>
-                                                    Application error.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">2 days</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-danger">
-                                                        <i class="fa fa-bolt"></i>
-                                                    </span>
-                                                    Database overloaded 68%.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">3 days</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-danger">
-                                                        <i class="fa fa-bolt"></i>
-                                                    </span>
-                                                    A user IP blocked.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">4 days</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-warning">
-                                                        <i class="fa fa-bell-o"></i>
-                                                    </span>
-                                                    Storage Server #4 not responding dfdfdfd.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">5 days</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-info">
-                                                        <i class="fa fa-bullhorn"></i>
-                                                    </span>
-                                                    System Error.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">9 days</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-danger">
-                                                        <i class="fa fa-bolt"></i>
-                                                    </span>
-                                                    Storage server failed.
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- END NOTIFICATION DROPDOWN -->
-                        <li class="droddown dropdown-separator">
-                            <span class="separator"></span>
-                        </li>
-                        <!-- BEGIN USER LOGIN DROPDOWN -->
-                        <li class="dropdown dropdown-user dropdown-dark">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <img alt="" class="img-circle" src="" />
-                                <span id="currentUser" class="username username-hide-on-mobile"></span>
-                                <i class="fa fa-angle-down"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-default">
-                                <li>
-                                    <a href="/Profile">
-                                        <i class="icon-user"></i> Profilim
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/errorpage">
-                                        <i class="icon-calendar"></i> Takvim
-                                    </a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li>
-                                    <a id="doLock" href="/Login/Lock">
-                                        <i class="icon-lock"></i> Kilitle
-                                    </a>
-                                </li>
-                                <li>
-                                    <a><i class="icon-key"></i> Çıkış yap</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- END USER LOGIN DROPDOWN -->
-                    </ul>
-                </div>
-                <!-- END TOP NAVIGATION MENU -->
             </div>
         </div>
         <!-- END HEADER TOP -->
@@ -210,184 +50,25 @@
         <div class="page-header-menu">
             <div class="container-fluid">
                 <!-- BEGIN MEGA MENU -->
-		<div class="hor-menu">
+		        <div class="hor-menu">
                     <ul class="nav navbar-nav">
-                        <li>
-                            <a href="/home">
-                                <i class="icon-home"></i>
-                                <span class="title">Gösterge Paneli</span>
-                                <span class="selected"></span>
-                                <span class="arrow open"></span>
+                        <li class="home-active active">
+                            <a class="home-clickable">
+                                Home
                             </a>
                         </li>
-                        <li class="menu-dropdown classic-menu-dropdown">
-                            <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
-                                Netsim Raporları <i class="fa fa-angle-down"></i>
+                        <li class="about-active">
+                            <a class="about-clickable">
+                                About
                             </a>
                             <ul class="dropdown-menu pull-left">
-                                <li class="ayir">
-                                    <h3>Netsim Raporları</h3>
-                                </li>
-                                <li>
-                                    <a href="/DailyReturns">
-                                        <i class="fa fa-bars"></i>
-                                        Günlük Ciro
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/MerchantDetails">
-                                        <i class="fa fa-bars"></i>
-                                        Cari Detay Raporu
-                                    </a>
-                                </li>
-                                <li class="ayir">
-                                    <h3>Stok Raporları</h3>
-                                </li>
-                                <li>
-                                    <a href="/ProductAgeTurnOver">
-                                        <i class="fa fa-bars"></i>
-                                        Stok Yaşı / Sts
-                                    </a>
-                                </li>
-                                <li class="ayir">
-                                    <h3>Ürün Grupları</h3>
-                                </li>
-                                <li>
-                                    <a href="/ProductGroups">
-                                        <i class="fa fa-bars"></i>
-                                        Ciro Detay
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/ProductGroups/ProductCompare">
-                                        <i class="fa fa-bars"></i>
-                                        Ciro Karşılaştırma
-                                    </a>
-                                </li>
                             </ul>
                         </li>
-                        <li class="menu-dropdown classic-menu-dropdown">
-                            <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
-                                Webmarket Raporları <i class="fa fa-angle-down"></i>
+                        <li class="contactus-active">
+                            <a class="contactus-clickable">
+                                Contact Us
                             </a>
-                            <ul class="dropdown-menu pull-left">
-                                <li>
-                                    <a href="/WebDashboard/Weblogs">
-                                        <i class="fa fa-bars"></i>
-                                        Webmarket Logları
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-dropdown classic-menu-dropdown">
-                            <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
-                                Finans Raporları <i class="fa fa-angle-down"></i>
-                            </a>
-                            <ul class="dropdown-menu pull-left">
-                                <li>
-                                    <a href="/DelayCrm">
-                                        <i class="fa fa-bars"></i>
-                                        Gecikme Takip
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/DelayReport">
-                                        <i class="fa fa-bars"></i>
-                                        Gecikme Raporu
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-dropdown classic-menu-dropdown">
-                            <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
-                                Personel Bilgi Sistemi <i class="fa fa-angle-down"></i>
-                            </a>
-                            <ul class="dropdown-menu pull-left">
-                                <li>
-                                    <a href="/Personel/Index">
-                                        <i class="fa fa-user"></i>
-                                        Personel Bilgileri
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/Personel/takvim">
-                                        <i class="fa fa-calendar"></i>
-                                        Personel Takvim
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/Personel/talep">
-                                        <i class="fa fa-coffee"></i>
-                                        Talep Oluştur
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/Personel/talepyonet">
-                                        <i class="fa fa-pencil"></i>
-                                        Talep Yönet
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/AyinPersoneli">
-                                        <i class="fa fa-user"></i>
-                                        Ayın Personeli Yonetimi
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-dropdown classic-menu-dropdown">
-                            <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
-                                Ayarlar <i class="fa fa-angle-down"></i>
-                            </a>
-                            <ul class="dropdown-menu pull-left">
-                                <li>
-                                    <a href="/EditUsers">
-                                        <i class="fa fa-cog"></i>
-                                        Kullanıcı Ekleme
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/EditGroups">
-                                        <i class="fa fa-cog"></i>
-                                        Grup Ekleme
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/InsertNotif/">
-                                        <i class="fa fa-cog"></i>
-                                        Bildirim Yönetimi
-                                    </a>
-
-
-                                </li>
-                                <li>
-                                    <a href="/Profile">
-                                        <i class="fa fa-cog"></i>
-                                        Profilim
-                                    </a>
-
-
-                                </li>
-                                <li>
-                                    <a href="/AgentDest">
-                                        <i class="fa fa-cog"></i>
-                                        Temsilci Hedef Tanım.
-                                    </a>
-
-                                </li>
-                                <li>
-                                    <a href="/StockMaster">
-                                        <i class="fa fa-cog"></i>
-                                        Ürün Müd. Düzenleme
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/DirectoryInsert">
-                                        <i class="fa fa-cog"></i>
-                                        Rehber Düzenleme
-                                    </a>
-                                </li>
-                            </ul>
+                            <ul class="dropdown-menu pull-left"></ul>
                         </li>
                     </ul>
                 </div>
@@ -404,7 +85,123 @@
     <div class="page-container">
         <!-- BEGIN CONTENT -->
         <div class="page-content">
-            <div class="container-fluid"></div>
+            <div class="container-fluid">
+                <div id="home" class="col-md-12">
+                    <h2 style="font-family:NeueFrutigerBold">&nbsp; WhosePic: A Face Retrieval Mobile Application</h2>
+                    <div class="col-md-4">
+                        <img src="img/face-img.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-md-8">
+                        <p style="font-size: 16px;">
+                            Most people have an excessive number of photos in their mobile phone. Since we started to use as 
+                            a camera to our smartphones, almost all of our photos are saved in our phones. Besides, big amount
+                            of these photos come from social media platforms or WhatsApp. Tracing all of these photos is nearly
+                            imposibble, and it is hard to find the relevant photos among these thousands of photos.
+                        </p>
+                        <p style="font-size: 16px;">
+                            There are some mobile applications for Android which perform a prediction understand which objects
+                            the photo included. However, there is no application to classify the photos based on people in
+                            address book of the phone. Therefore, we target to classify photos by human faces in it.
+                        </p>
+                        <p style="font-size: 16px;">
+                            Our application will be an Android based mobile application that only requests one photo for a
+                            person in address book, then it will find out the other photos of this person exist in the memory
+                            of smartphone and put these photos together with a user-friendly interface.
+                        </p>
+                    </div>
+                </div>
+                <div id="about" class="col-md-12" style="display: none;">
+                    <h2 style="font-family:NeueFrutigerBold">What is our project?</h2>
+                    <p style="font-size: 16px;">
+                        Our application will be an Android based mobile application that only requests one photo for a
+                        person in address book, then it will find out the other photos of this person exist in the memory
+                        of smartphone and put these photos together with a user-friendly interface.
+                    </p>
+                    <p style="font-size: 16px;">
+                        To achieve this, we need to detect one's face, identify all critical points in face of this person
+                        which make the person unique, and then we need to compare all of other faces in the other photos in 
+                        an efficient way. Because this application will be Android based, we need to implement some image 
+                        processing algorithms into java, which could be challenging.
+                    </p>
+                    <h2 style="font-family:NeueFrutigerBold">Who are we?</h2>
+                    <p style="font-size: 16px;">
+                        We are Bilkent University students, and this project is our Senior Design Project.
+                    </p>
+                </div>
+                <div id="contactus" class="col-md-12" style="display: none;">
+                    <h2 style="font-family:NeueFrutigerBold">&nbsp;&nbsp;The Members of Project:</h2>
+                    <div class="col-md-6">
+                        <div class="portlet box purple">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-check"></i>Çiğdem Gündüz Demir
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                Supervisor of the Project, Instructor in Bilkent University CS Department<br />
+                                Email address: gunduz@cs.bilkent.edu.tr
+                            </div>
+                        </div>
+                        <div class="portlet box blue">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-check"></i>Ali Güneş
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                Software Developer, Visual Designer<br />
+                                Email address: ali.gunes@ug.bilkent.edu.tr
+                            </div>
+                        </div>
+                        <div class="portlet box green-jungle">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-check"></i>Muhammed Emin Tosun
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                Software Developer<br />
+                                Email address: muhammed.tosun@ug.bilkent.edu.tr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="portlet box yellow">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-check"></i>Mert Sebahattin Kutluca
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                Head of the Project, Software Developer<br />
+                                Email address: mert.kutluca@ug.bilkent.edu.tr
+                            </div>
+                        </div>
+                        <div class="portlet box red">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-check"></i>Ecem Afacan
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                Software Developer<br />
+                                Email address: ecem.afacan@ug.bilkent.edu.tr
+                            </div>
+                        </div>
+                        <div class="portlet box green">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-check"></i>Halil Selman Atmaca
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                Software Developer<br />
+                                Email address: halil.atmaca@ug.bilkent.edu.tr
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- END CONTENT -->
     </div>
@@ -412,9 +209,38 @@
     <!-- BEGIN FOOTER -->
     <div class="page-footer">
         <div class="container-fluid">
-            <span class="current_year"></span> &copy; Çözüm A.Ş Rapor Servisi.
+            <span class="current_year"></span> &copy; Whosepic App Official Website
         </div>
     </div>
     <!-- END FOOTER -->
+    <script src="scripts/jquery.min.js" type="text/javascript"></script>
+    <script>
+        jQuery(document).ready(function () {
+            $('.home-clickable').click(function () {
+                $('#home').show();
+                $('#about').hide();
+                $('#contactus').hide();
+                $('.home-active').addClass('active');
+                $('.about-active').removeClass('active');
+                $('.contactus-active').removeClass('active');
+            });
+            $('.about-clickable').click(function () {
+                $('#home').hide();
+                $('#about').show();
+                $('#contactus').hide();
+                $('.home-active').removeClass('active');
+                $('.about-active').addClass('active');
+                $('.contactus-active').removeClass('active');
+            });
+            $('.contactus-clickable').click(function () {
+                $('#home').hide();
+                $('#about').hide();
+                $('#contactus').show();
+                $('.home-active').removeClass('active');
+                $('.about-active').removeClass('active');
+                $('.contactus-active').addClass('active');
+            });
+        });
+    </script>
 </body>
 </html>
